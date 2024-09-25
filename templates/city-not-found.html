@@ -3,13 +3,15 @@
 {% block title %}City Not Found{% endblock %}
 
 {% block content %}
-<div class="weather-card">
-    <h1 class="display-4">City Not Found</h1>
-    <p>We could not find the city you were looking for. Please try again.</p>
+<div class="full-container">
+    <div class="weather-card">
+        <h1 class="display-4">City Not Found</h1>
+        <p>We could not find the city you were looking for. Please try again.</p>
 
-    <form class="d-flex mt-4" action="/weather">
-        <input type="text" class="form-control" name="city" id="city" placeholder="Enter a City" />
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <form class="d-flex mt-4" action="/weather">
+            <input type="text" class="form-control" name="city" id="city" placeholder="Enter a City" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </div>
 {% endblock %}

@@ -5,36 +5,39 @@
     box-sizing: border-box;
 }
 
+/* Full container for centering */
+.full-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
 /* Body Styles */
 body {
-    background: url("https://static.vecteezy.com/system/resources/previews/042/193/640/non_2x/ai-generated-overcast-sky-background-free-photo.jpg") no-repeat center center fixed;
+    background: url("https://wallpapers.com/images/hd/foggy-weather-and-gloomy-sky-8q0j6jsztd67czmb.jpg") no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    font-family: 'Roboto', sans-serif; /* Suggested Font */
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;  /* Light gray for text to stand out */
     font-size: 1.2rem;
     line-height: 1.6;
-    overflow: hidden; /* Prevents any unnecessary scrolling */
 }
 
 /* Card Style */
 .weather-card {
-    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.75);  /* Dark semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     padding: 2rem;
     text-align: center;
-    width: 100%;
     max-width: 500px;
+    width: 100%;
 }
 
 /* Headings */
 h1 {
     font-size: 2.5rem;
-    color: #ffd700;  /* Gold color to stand out against the dark background */
+    color: #00bfff;  /* A cyan color to complement the cool tones */
     margin-bottom: 1rem;
 }
 
@@ -56,34 +59,18 @@ input, button {
 
 input {
     flex: 1;
-    border: 1px solid #ccc;
+    border: 1px solid #00bfff;  /* Cyan border to match the heading */
     margin-right: 1rem;
+    color: #333;
 }
 
 button {
-    background-color: #ff4500; /* A vibrant orange to contrast with the cool tones of the background */
+    background-color: #00bfff; /* Cyan button to match the cool theme */
     color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff6347; /* Slightly lighter orange on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    .weather-card {
-        padding: 1.5rem;
-    }
-
-    input, button {
-        font-size: 1rem;
-        padding: 0.6rem;
-    }
+    background-color: #008fb3; /* Darker cyan on hover */
 }
