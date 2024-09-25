@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} Weather{% endblock %}
+
+{% block content %}
+<div class="weather-card">
+    <h1 class="display-4">{{ title }} Weather</h1>
+    <p>{{ status }} and {{ temp }} &deg;C</p>
+    <p>Feels like {{ feels_like }} &deg;C</p>
+
+    <form class="d-flex mt-4" action="/weather">
+        <input type="text" class="form-control" name="city" id="city" placeholder="Enter a City" />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
